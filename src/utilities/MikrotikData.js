@@ -2,7 +2,7 @@
 
 export async function mikrotikRequest(ip, username, password, port, commands = []) {
     // const url = `https://${ip}:${port}/api`;
-    const url = `http://${ip}/rest`;
+    const url = `http://${ip}:${port}/rest`;
     const options = {
         method: 'POST',
         headers: {
